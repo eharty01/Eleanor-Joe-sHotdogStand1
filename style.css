@@ -1,60 +1,10 @@
-header {
-    position: fixed;
-    width: 100%;
-}
-
-.navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: lightcoral;
-  width: 100%;
-  padding: 0 20px;
-}
-
-.brand-group {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.navbar .logo {
-  width: 40px;
-  border-radius: 50%;
-}
-
-.navbar h2 {
-  font-size: 1.7rem;
-  font-weight: 600;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  color: #F7D488;
-  margin: 0;
-  display: flex;
-  padding-top: 45px;
-}
-
-.navbar .links {
-    display: flex;
-    list-style: none;
-    gap: 35px;
-    padding-right: 10px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-.navbar .links a {
-    text-decoration: none;
-    font-size: 1.1rem;
-    font-weight: 500;
-    color: white;
-}
-
-.navbar .links a:hover {
-    color: #F7D488;
-}
-
 .receipt {
-    background-color: antiquewhite;
+    background-color: white;
     position: center;
+    max-height: 400px;
+    max-width: 350px;
+    border-radius: 15px;
+    margin-left: 200px;
 }
 
 body {
