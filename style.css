@@ -52,6 +52,11 @@ header {
     color: #F7D488;
 }
 
+.receipt {
+    background-color: antiquewhite;
+    position: center;
+}
+
 body {
     margin: 0;
     background-size: cover;
