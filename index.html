@@ -85,20 +85,22 @@
             let friesPriceTotal = 0;
             let sodaPriceTotal = 0;
 
+            /* meal deal and non-meal deal case */
             if (numDogs == 1 && numFries == 1 && numSoda == 1) {
-                discount = 1.50;
-                subtotal = 10.00;
-                total = 10.63;
-                tax = 0.63;
-                hotdogPriceTotal = 5.25;
-                sodaPriceTotal = 2.50;
-                friesPriceTotal = 3.75;
+                discount = "$1.50";
+                subtotal = "$10.00";
+                total = "$10.63";
+                tax = "$0.63";
+                hotdogPriceTotal = "$5.25";
+                sodaPriceTotal = "$2.50";
+                friesPriceTotal = "$3.75";
 
             } else {
                 hotdogPriceTotal = numDogs * 5.25;
                 friesPriceTotal = numFries * 3.75;
                 sodaPriceTotal = numSoda * 2.50;
                 subtotal = hotdogPriceTotal + friesPriceTotal + sodaPriceTotal;
+                /* order of $30 or more */
                 if (subtotal >= 30) {
                     discount = subtotal * 0.1;
                     subtotal = subtotal - discount;
