@@ -70,7 +70,19 @@
     <script>
         function showMoney(input) {
             input = Math.round(input * 100) / 100;
-            let output = "$" + input;
+            let dollars = Math.floor(input);
+            let cents = input - dollars;
+            let output = "";
+
+            if (cents == 0) {
+                output = "$" + input + ".00";
+            } else {
+                if (cents * 100 % 10 == 0) {
+                    output = "$" + input + "0";
+                }
+                output = "$" + input;
+            }
+
             return output;
         }
 
