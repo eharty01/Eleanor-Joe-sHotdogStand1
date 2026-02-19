@@ -12,7 +12,7 @@
 </head>
 <body>
     <div class = "receipt">
-        <h2>Your Order from Joe's Hotdog Stand</h2>
+        <h2>Joe's Hotdog Stand Receipt: Your Order</h2>
         <p>Thank you for your business!</p>
 
         <table>
@@ -69,11 +69,13 @@
 
     <script>
         function showMoney(input) {
+            /* round the input */
             input = Math.round(input * 100) / 100;
             let dollars = Math.floor(input);
             let cents = input - dollars;
             let output = "";
 
+            /* make sure cents are included to the hundredths */
             if (cents == 0) {
                 output = "$" + input + ".00";
             } else if (((cents * 100) % 10) == 0) {
@@ -140,11 +142,11 @@
     </script>
 
 </body>
+
 <footer>
     Where to find us:
-    <ul>
-        <li>123 Main St., Medford MA</li>
-        <li>456 Broadway, Somerville MA</li>
-    </ul>
+    <p>123 Main St., Medford MA</p>
+    <p>456 Broadway, Somerville MA</p>
 </footer>
+
 </html>
