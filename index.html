@@ -70,7 +70,8 @@
     <script>
         function showMoney(input) {
             input = Math.round(input * 100) / 100;
-            return input;
+            let output = "$" + input;
+            return output;
         }
 
         window.onload = function JoeMenu() {
